@@ -33,16 +33,20 @@ body {
 	width: 100%;
 	padding: 2%;
 	margin-bottom: 70px;
-	max-height: 300px;
+	/*	max-height: 300px;*/
 	font-variant: small-caps;
 }
 
 .line_wrapper {
 	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
 }
 
 .word_hint {
 	font-variant: normal;
+	font-size: 14px;
 }
 
 .hidden_word {
