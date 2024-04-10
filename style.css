@@ -34,13 +34,14 @@ body {
 	padding: 2%;
 	margin-bottom: 70px;
 	/*	max-height: 300px;*/
-	font-variant: small-caps;
+	/*	font-variant: small-caps;*/
 }
 
 .line_wrapper {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	align-items: center;
 
 }
 
