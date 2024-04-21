@@ -10,7 +10,7 @@ body {
 }
 
 .content_wrapper {
-	color: #194c72;
+	color: hsl(206, 64%, 27%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -19,7 +19,7 @@ body {
 	max-width: 500px;
 	margin: 10% auto;
 	padding: 45px 5%;
-	box-shadow: 0 16px 64px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 16px 64px 0 hsla(0, 0%, 0%, 0.15);
 	border-radius: 25px;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .hidden_word {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 
 .buttons_wrapper {
@@ -60,13 +60,14 @@ body {
 
 button {
 	all: unset;
-	color: #194c72;
+	color: hsla(206, 64%, 27%, 1.0);
 	width: 30%;
 	padding: 10px 30px;
 	font-size: 20px;
 	cursor: pointer;
 	border: 1px solid;
-	/*	border-radius: 5px; */
+	border-radius: 5px;
 	text-align: center;
 	font-variant: small-caps;
+	box-shadow: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
 }
