@@ -3,7 +3,6 @@ import { words } from './data.js';
 const checkButton = document.querySelector('.check_btn');
 const nextButton = document.querySelector('.next_btn');
 const hiddenWord = document.querySelectorAll('.hidden_word');
-//let firstWord = document.querySelector('.first_form');
 const cardNumber = randomCard();
 
 function randomCard() {
@@ -15,10 +14,6 @@ function showHidden() {
 		word.classList.remove('hidden_word');
 	})
 }
-
-//function newWord() {
-//
-//}
 
 checkButton.addEventListener('click', showHidden);
 
