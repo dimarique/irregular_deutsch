@@ -1,4 +1,5 @@
 export const words = [
+	// 143 words
 	['anbieten', 'bietet an', 'bot an', 'hat angeboten', 'предлагать'],
 	['anfangen', 'fängt an', 'fing an', 'hat angefangen', 'начинать'],
 	['backen', 'backt', 'backte', 'hat gebacken', 'печь'],
