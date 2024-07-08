@@ -1,7 +1,10 @@
+:root {
+	--mainBlue: hsl(206, 64%, 27%);
+}
+
 * {
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 20px;
 	margin: 0;
 }
 
@@ -10,7 +13,7 @@ body {
 }
 
 .content_wrapper {
-	color: hsl(206, 64%, 27%);
+	color: var(--mainBlue);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -23,11 +26,12 @@ body {
 	border-radius: 25px;
 }
 
-i.fa-magnifying-glass {
+/*i.fa-magnifying-glass {
 	margin-right: 8px;
 	align-self: flex-end;
 	cursor: pointer;
 }
+*/
 
 .words_wrapper {
 	display: flex;
@@ -49,9 +53,30 @@ i.fa-magnifying-glass {
 
 }
 
+.word {
+	font-size: 1.25rem;
+}
+
 .word_hint {
 	font-variant: normal;
-	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.searchPane {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8px;
+}
+
+input[type=text] {
+	all: unset;
+	border: 1px solid var(--mainBlue);
+	border-radius: 22px;
+	font-size: 1rem;
+	padding: 5px;
+	/*width: 10em;*/
 }
 
 .hidden_word {
@@ -69,7 +94,7 @@ button {
 	color: hsla(206, 64%, 27%, 1.0);
 	width: 30%;
 	padding: 10px 30px;
-	font-size: 20px;
+	font-size: 1.25rem;
 	cursor: pointer;
 	border: 1px solid;
 	border-radius: 5px;
