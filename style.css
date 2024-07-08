@@ -23,6 +23,12 @@ body {
 	border-radius: 25px;
 }
 
+i.fa-magnifying-glass {
+	margin-right: 8px;
+	align-self: flex-end;
+	cursor: pointer;
+}
+
 .words_wrapper {
 	display: flex;
 	flex-direction: column;
