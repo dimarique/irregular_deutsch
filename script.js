@@ -7,6 +7,7 @@ const searchButton = document.querySelector('.searchToggler');
 const searchBar = document.querySelector('.searchBar');
 const cardNumber = randomCard();
 
+//Toggle visibility of the search bar
 function searchBarToggle() {
 	searchBar.classList.toggle('hidden');
 	searchBar.value = '';
@@ -16,6 +17,7 @@ function randomCard() {
 	return Math.floor(Math.random() * words.length);
 }
 
+//Shows hidden words
 function showHidden() {
 	hiddenWord.forEach(function(word) {
 		word.classList.remove('hidden_word');
