@@ -46,7 +46,7 @@ searchButton.addEventListener('click', searchBarToggle);
 //}
 //updateFormFields()
 document.querySelector(selectors[0]).innerText = words[cardNumber][0];
-document.querySelector('.second_form').innerText = words[cardNumber][1];
-document.querySelector('.third_form').innerText = words[cardNumber][2];
-document.querySelector('.fourth_form').innerText = words[cardNumber][3];
-document.querySelector('.translate').innerText = words[cardNumber][4];
+document.querySelector(selectors[1]).innerText = words[cardNumber][1];
+document.querySelector(selectors[2]).innerText = words[cardNumber][2];
+document.querySelector(selectors[3]).innerText = words[cardNumber][3];
+document.querySelector(selectors[4]).innerText = words[cardNumber][4];
