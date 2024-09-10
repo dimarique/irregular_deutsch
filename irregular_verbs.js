@@ -3,20 +3,20 @@ import { words } from './data.js';
 //in debugging purpose
 window.words = words
 
-
-const checkButton = document.querySelector('.check_btn');
-const nextButton = document.querySelector('.next_btn');
-const hiddenWord = document.querySelectorAll('.hidden_word');
-const searchButton = document.querySelector('.searchToggler');
-const searchBar = document.querySelector('.searchBar');
-const cardNumber = randomCard();
-
+const elements = {
+	checkButton: document.querySelector('.check_btn'),
+	nextButton: document.querySelector('.next_btn'),
+	hiddenWord: document.querySelectorAll('.hidden_word'),
+	searchButton: document.querySelector('.searchToggler'),
+	searchBar: document.querySelector('.searchBar'),
+	cardNumber: randomCard()
+};
 const selectors = ['.first_form', '.second_form', '.third_form', '.fourth_form', '.translate'];
 
 //Toggle visibility of the search bar
 function searchBarToggle() {
-	searchBar.classList.toggle('hidden');
-	searchBar.value = '';
+	elements.searchBar.classList.toggle('hidden');
+	elements.searchBar.value = '';
 }
 
 function randomCard() {
@@ -25,20 +25,20 @@ function randomCard() {
 
 //Shows hidden words
 function showHidden() {
-	hiddenWord.forEach(function(word) {
+	elements.hiddenWord.forEach(function(word) {
 		word.classList.remove('hidden_word');
 	})
 }
 
-nextButton.addEventListener('click', function() {
+elements.nextButton.addEventListener('click', function() {
 	location.reload();
 	return false;
 });
 
 
-checkButton.addEventListener('click', showHidden);
-searchButton.addEventListener('click', searchBarToggle);
+elements.checkButton.addEventListener('click', showHidden);
+elements.searchButton.addEventListener('click', searchBarToggle);
 
 selectors.forEach((selector, index) => {
-	document.querySelector(selector).innerText = words[cardNumber][index];
+	document.querySelector(selector).innerText = words[elements.cardNumber][index];
 });
