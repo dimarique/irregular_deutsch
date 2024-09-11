@@ -1,5 +1,5 @@
 import { words } from './data.js';
-
+import { commonPrepositions } from './data.js'
 //in debugging purpose
 window.words = words
 
@@ -36,7 +36,7 @@ nextButton.addEventListener('click', function() {
 });
 
 
-checkButton.addEventListener('click', showHidden);
+//checkButton.addEventListener('click', showHidden);
 searchButton.addEventListener('click', searchBarToggle);
 
 selectors.forEach((selector, index) => {
