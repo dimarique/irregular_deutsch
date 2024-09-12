@@ -1,17 +1,14 @@
-import { words } from './data.js';
 import { commonPrepositions } from './data.js'
+import { verbsMitPrep } from './data.js'
+
 //in debugging purpose
-window.words = words
+window.commonPrepositions = commonPrepositions
+window.verbsMitPrep = verbsMitPrep
 
-
-const checkButton = document.querySelector('.check_btn');
 const nextButton = document.querySelector('.next_btn');
-const hiddenWord = document.querySelectorAll('.hidden_word');
 const searchButton = document.querySelector('.searchToggler');
 const searchBar = document.querySelector('.searchBar');
-const cardNumber = randomCard();
 
-const selectors = ['.first_form', '.second_form', '.third_form', '.fourth_form', '.translate'];
 
 //Toggle visibility of the search bar
 function searchBarToggle() {
@@ -19,16 +16,6 @@ function searchBarToggle() {
 	searchBar.value = '';
 }
 
-function randomCard() {
-	return Math.floor(Math.random() * words.length);
-}
-
-//Shows hidden words
-function showHidden() {
-	hiddenWord.forEach(function(word) {
-		word.classList.remove('hidden_word');
-	})
-}
 
 nextButton.addEventListener('click', function() {
 	location.reload();
@@ -36,9 +23,26 @@ nextButton.addEventListener('click', function() {
 });
 
 
-//checkButton.addEventListener('click', showHidden);
 searchButton.addEventListener('click', searchBarToggle);
 
-selectors.forEach((selector, index) => {
-	document.querySelector(selector).innerText = words[cardNumber][index];
-});
+/*
+ *selectors.forEach((selector, index) => {
+ *    document.querySelector(selector).innerText = words[cardNumber][index];
+ *});
+ */
+
+
+/*
+ *function randomCard() {
+ *    return Math.floor(Math.random() * words.length);
+ *}
+ */
+
+/*
+ *Shows hidden words
+ *function showHidden() {
+ *hiddenWord.forEach(function(word) {
+ *word.classList.remove('hidden_word');
+ *})
+ *}
+ */
