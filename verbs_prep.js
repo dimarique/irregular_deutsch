@@ -5,25 +5,31 @@ import { verbsMitPrep } from './data.js'
 window.commonPrepositions = commonPrepositions
 window.verbsMitPrep = verbsMitPrep
 
-const nextButton = document.querySelector('.next_btn');
-const searchButton = document.querySelector('.searchToggler');
-const searchBar = document.querySelector('.searchBar');
+const elements = {
+	nextButton: document.querySelector('.next_btn'),
+	searchButton: document.querySelector('.searchToggler'),
+	searchBar: document.querySelector('.searchBar'),
+	beispilText: document.querySelector('.beispil'),
+	verbMitPrep: document.querySelector('.verbMitPrep'),
+	translate: document.querySelector('.translate'),
+	cardNumber: randomCard()
+}
 
 
 //Toggle visibility of the search bar
 function searchBarToggle() {
-	searchBar.classList.toggle('hidden');
-	searchBar.value = '';
+	elements.searchBar.classList.toggle('hidden');
+	elements.searchBar.value = '';
 }
 
 
-nextButton.addEventListener('click', function() {
+elements.nextButton.addEventListener('click', function() {
 	location.reload();
 	return false;
 });
 
 
-searchButton.addEventListener('click', searchBarToggle);
+elements.searchButton.addEventListener('click', searchBarToggle);
 
 /*
  *selectors.forEach((selector, index) => {
@@ -32,12 +38,16 @@ searchButton.addEventListener('click', searchBarToggle);
  */
 
 
-/*
- *function randomCard() {
- *    return Math.floor(Math.random() * words.length);
- *}
- */
+function randomCard() {
+	return (Math.floor(Math.random() * verbsMitPrep.length));
 
+}
+
+
+elements.beispilText.innerText = verbsMitPrep[elements.cardNumber][1].join(' ');
+elements.verbMitPrep.innerText = verbsMitPrep[elements.cardNumber][0].join(' ');
+elements.translate.innerText = verbsMitPrep[elements.cardNumber][2];
+/*
 /*
  *Shows hidden words
  *function showHidden() {

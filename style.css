@@ -141,11 +141,17 @@ a {
 	cursor: pointer;
 	padding: 1em;
 	margin: .3em;
+	box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
+	border-radius: 5px;
 }
 
 .prepositions {}
 
-.translate {}
+.translate {
+
+	font-size: 0.8rem;
+	margin-bottom: 2.2em;
+}
 
 /*         */
 /* Start buttons block */
