@@ -149,8 +149,10 @@ a {
 
 .translate {
 
-	font-size: 0.8rem;
-	margin-bottom: 2.2em;
+	/*
+	 *font-size: 0.8rem;
+	 *margin-bottom: 2.2em;
+	 */
 }
 
 /*         */

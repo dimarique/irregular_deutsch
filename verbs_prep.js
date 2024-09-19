@@ -11,7 +11,7 @@ const elements = {
 	searchBar: document.querySelector('.searchBar'),
 	beispilText: document.querySelector('.beispil'),
 	verbMitPrep: document.querySelector('.verbMitPrep'),
-	translate: document.querySelector('.translate'),
+	explanation: document.querySelector('.explanation'),
 	cardNumber: randomCard()
 }
 
@@ -46,7 +46,7 @@ function randomCard() {
 
 elements.beispilText.innerText = verbsMitPrep[elements.cardNumber][1].join(' ');
 elements.verbMitPrep.innerText = verbsMitPrep[elements.cardNumber][0].join(' ');
-elements.translate.innerText = verbsMitPrep[elements.cardNumber][2];
+elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
 /*
 /*
  *Shows hidden words
