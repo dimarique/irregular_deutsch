@@ -18,7 +18,9 @@ const elements = {
 }
 elements.specialWordButtonIndex = getRandomIndex(elements.buttons);
 elements.prepToHide = verbsMitPrep[elements.cardNumber][0][1];
+
 const wordsWithoutSpecial = commonPrepositions.filter(word => word !== elements.prepToHide);
+
 elements.randomWords = getRandomWords(wordsWithoutSpecial, 4)
 
 function getRandomIndex(array) {
@@ -74,11 +76,6 @@ function randomCard() {
 
 }
 
-
-/*
- *elements.beispilText.innerText = verbsMitPrep[elements.cardNumber][1].join(' ');
- *elements.verbMitPrep.innerText = verbsMitPrep[elements.cardNumber][0].join(' ');
- */
 elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
 
 
