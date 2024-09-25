@@ -6,7 +6,7 @@ window.words = words
 const elements = {
 	checkButton: document.querySelector('.check_btn'),
 	nextButton: document.querySelector('.next_btn'),
-	hiddenWord: document.querySelectorAll('.hidden_word'),
+	hiddenWord: document.querySelectorAll('.hidden_word_IV'),
 	searchButton: document.querySelector('.searchToggler'),
 	searchBar: document.querySelector('.searchBar'),
 	cardNumber: randomCard()
@@ -26,7 +26,7 @@ function randomCard() {
 //Shows hidden words
 function showHidden() {
 	elements.hiddenWord.forEach(function(word) {
-		word.classList.remove('hidden_word');
+		word.classList.remove('hidden_word_IV');
 	})
 }
 

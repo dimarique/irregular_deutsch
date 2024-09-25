@@ -79,6 +79,11 @@ a {
 	/*padding: 1px 7px;*/
 }
 
+.hidden_word_IV {
+	color: hsl(0, 0%, 100%);
+	padding: 1px 7px;
+}
+
 .pageSwitcher {
 	cursor: pointer;
 	padding: 1em;
