@@ -40,8 +40,6 @@ function hidePrepInText(text) {
 elements.beispilText.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][1].join(' '));
 elements.verbMitPrep.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][0].join(' '));
 
-
-
 //Toggle visibility of the search bar
 function searchBarToggle() {
 	elements.searchBar.classList.toggle('hidden');
@@ -68,21 +66,10 @@ elements.nextButton.addEventListener('click', function() {
 	return false;
 });
 
-
 elements.searchButton.addEventListener('click', searchBarToggle);
 
 function randomCard() {
 	return (Math.floor(Math.random() * verbsMitPrep.length));
-
 }
 
 elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
-
-
-
-console.log(elements.prepToHide, elements.verbMitPrep.innerHTML);
-
-
-
-
-
