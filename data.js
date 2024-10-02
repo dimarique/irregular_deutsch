@@ -147,6 +147,7 @@ export const words = [
 ];
 
 export const verbsMitPrep = [
+	// 46 verbs
 	[["sich entscheiden", "für"], ["Die Familie entscheidet sich", "für", "die Wohnung mit Balkon."], "Решаться на ..., Принимать решение в пользу ..."],
 	[["sich entschuldigen", "für"], ["Wir entschuldigen uns", "für", "die Verspätung."], "Извиняться за ..., Просить прощение за..."],
 	[["sich erinnern", "an"], ["Akono erinnert sich", "an", "seine Kindheit."], "Вспоминать о ..."],
@@ -196,5 +197,6 @@ export const verbsMitPrep = [
 ];
 
 export const commonPrepositions = [
+	//14 preps
 	"an", "auf", "aus", "bei", "für", "gegen", "in", "mit", "nach", "über", "um", "unter", "von", "vor", "zu"
 ];
