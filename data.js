@@ -191,7 +191,7 @@ export const verbsMitPrep = [
 	[["sich bewerben", "um"], ["Die Stelle ist toll! Bewirbst du dich", "um", "sie?"], "Подавать заявку на, Соискать"],
 	[["bitten", "um"], ["Malaika Hadrawi bittet eine Kollegin", "um", "Hilfe bei der Betreuung ihres Kindes."], "Просить о"],
 	[["denken", "an"], ["Denken Sie", "an", "den Lebenslauf?"], "Думать о, Вспоминать о"],
-	[["diskutieren", "über"], ["Worüber diskutiert ihr denn gerade", "über?"], "Обсуждать, Дискутировать о"],
+	[["diskutieren", "über"], ["Worüber diskutiert ihr denn gerade", "über?", ""], "Обсуждать, Дискутировать о"],
 	[["sich entschuldigen", "für"], ["Er entschuldigt sich", "für", "die Verspätung."], "Извиняться за"],
 	[["sich erinnern", "an"], ["Anita Jiménez erinnert sich oft", "an", "ihre Freunde in Argentinien."], "Вспоминать о, Помнить о"]
 ];
