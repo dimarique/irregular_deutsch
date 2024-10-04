@@ -1,5 +1,6 @@
 :root {
-	--mainBlue: hsl(206, 64%, 27%);
+	--mainDarkColor: hsl(206, 64%, 27%);
+	--mainWhiteColor: white;
 }
 
 * {
@@ -28,7 +29,7 @@ a {
 
 
 .content_wrapper {
-	color: var(--mainBlue);
+	color: var(--mainDarkColor);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -147,16 +148,6 @@ a {
 
 }
 
-.prepWrapper>a {
-
-	/*
-	 *cursor: pointer;
-	 *padding: 1em;
-	 *margin: .3em;
-	 *box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
-	 *border-radius: 5px;
-	 */
-}
 
 .prepositions {}
 
@@ -172,15 +163,6 @@ a {
 	box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5)
 }
 
-.translate {
-
-	/*
-	 *font-size: 0.8rem;
-	 *margin-bottom: 2.2em;
-	 */
-}
-
-/*         */
 /* Start buttons block */
 .buttons_wrapper {
 	width: 100%;
@@ -194,7 +176,7 @@ a {
 
 button {
 	all: unset;
-	color: hsla(206, 64%, 27%, 1.0);
+	color: var(--mainDarkColor);
 	width: 30%;
 	padding: 10px 30px;
 	font-size: 1.25rem;
@@ -207,3 +189,28 @@ button {
 }
 
 /* End buttons block */
+
+@media (prefers-color-scheme:dark) {
+	body {
+		background-color: black;
+	}
+
+	.content_wrapper {
+		color: var(--mainWhiteColor);
+		background-color: var(--mainDarkColor);
+		box-shadow: 0 16px 64px 0 hsla(0, 0%, 0%, 0.15);
+	}
+
+	.hidden_word_IV {
+		color: transparent;
+	}
+
+	.prep {
+		/*border-color: var(--mainWhiteColor);*/
+		border: 1px solid white;
+	}
+
+	button {
+		color: var(--mainWhiteColor);
+	}
+}
