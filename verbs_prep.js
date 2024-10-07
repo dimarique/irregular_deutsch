@@ -52,15 +52,20 @@ elements.buttons.forEach((button, index) => {
 	} else {
 		button.textContent = elements.randomWords.pop();
 	}
+
 	button.addEventListener('click', () => {
 		if (button.textContent === elements.prepToHide) {
 			document.querySelectorAll('.hidden_word').forEach(span => {
 				span.classList.remove('hidden_word');
 			});
+		} else {
+			button.classList.add('animated');
+			setTimeout(() => {
+				button.classList.remove('animated');
+			}, 100);
 		}
 	});
 });
-
 elements.nextButton.addEventListener('click', function() {
 	location.reload();
 	return false;

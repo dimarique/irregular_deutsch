@@ -160,7 +160,12 @@ a {
 	border-radius: 5px;
 	text-align: center;
 	border: none;
-	box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5)
+	box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
+}
+
+.animated {
+	background-color: hsla(0, 100%, 50%, 0.75);
+	animation: errorAnim 0.1s 1;
 }
 
 /* Start buttons block */
@@ -186,6 +191,16 @@ button {
 	text-align: center;
 	font-variant: small-caps;
 	box-shadow: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
+}
+
+@keyframes errorAnim {
+	0% {
+		box-shadow: 0px 0px 0px 0px hsla(0, 100%, 50%, 0.75);
+	}
+
+	100% {
+		box-shadow: 0px 0px 50px 50px rgba(255, 0, 0, 0.5);
+	}
 }
 
 /* End buttons block */
