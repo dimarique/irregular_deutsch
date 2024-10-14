@@ -40,160 +40,337 @@ export const words = [
 	['frieren', 'friert', 'fror', 'hat/ist gefroren', 'замерзать'],
 	['gebären', 'gebärt', 'gebar', 'hat geboren', 'рожать'],
 	['geben', 'gibt', 'gab', 'hat gegeben', 'давать'],
-	['gefallen', 'gefällt', 'gefiel', 'hat gefallen', 'нравиться']
-	["gehen", "gehe", "ging", "ist gegangen", "идти"],
-	["gelingen", "gelinge", "gelang", "ist gelungen", "удаваться"],
-	["gelten", "gelte", "galt", "hat gegolten", "действовать"],
-	["genießen", "genieße", "genoss", "hat genossen", "наслаждаться"],
-	["geschehen", "geschehe", "geschah", "ist geschehen", "происходить"],
-	["gewinnen", "gewinne", "gewann", "hat gewonnen", "выигрывать"],
-	["gießen", "gieße", "goss", "hat gegossen", "лить"],
-	["gleiten", "gleite", "glitt", "ist geglitten", "скользить"],
-	["graben", "grabe", "grub", "hat gegraben", "копать"],
-	["greifen", "greife", "griff", "hat gegriffen", "хватать"],
-	["haben", "habe", "hatte", "hat gehabt", "иметь"],
-	["halten", "halte", "hielt", "hat gehalten", "держать"],
-	["hängen", "hänge", "hing", "hat gehangen", "висеть"],
-	["heben", "hebe", "hob", "hat gehoben", "поднимать"],
-	["heißen", "heiße", "hieß", "hat geheißen", "звать"],
-	["helfen", "helfe", "half", "hat geholfen", "помогать"],
-	["kennen", "kenne", "kannte", "hat gekannt", "знать"],
-	["klingen", "klinge", "klang", "hat geklungen", "звучать"],
-	["kommen", "komme", "kam", "ist gekommen", "приходить"],
-	["können", "kann", "konnte", "hat gekonnt", "мочь"],
-	["laden", "lade", "lud", "hat geladen", "загружать"],
-	["lassen", "lasse", "ließ", "hat gelassen", "позволять"],
-	["laufen", "laufe", "lief", "ist gelaufen", "бежать"],
-	["leiden", "leide", "litt", "hat gelitten", "страдать"],
-	["leihen", "leihe", "lieh", "hat geliehen", "одолжить"],
-	["lesen", "lese", "las", "hat gelesen", "читать"],
-	["liegen", "liege", "lag", "hat gelegen", "лежать"],
-	["lügen", "lüge", "log", "hat gelogen", "врать"],
-	["messen", "messe", "maß", "hat gemessen", "измерять"],
-	["mögen", "mag", "mochte", "hat gemocht", "любить"],
-	["müssen", "muss", "musste", "hat gemusst", "должен"],
-	["nehmen", "nehme", "nahm", "hat genommen", "брать"],
-	["nennen", "nenne", "nannte", "hat genannt", "называть"],
-	["pfeifen", "pfeife", "pfiff", "hat gepfiffen", "свистеть"],
-	["raten", "rate", "riet", "hat geraten", "советовать"],
-	["reiben", "reibe", "rieb", "hat gerieben", "тереть"],
-	["reißen", "reiße", "riss", "hat gerissen", "рвать"],
-	["reiten", "reite", "ritt", "ist geritten", "ездить верхом"],
-	["riechen", "rieche", "roch", "hat gerochen", "пахнуть"],
-	["rufen", "rufe", "rief", "hat gerufen", "кричать"],
-	["saufen", "saufe", "soff", "hat gesoffen", "пить (животное)"],
-	["schaffen", "schaffe", "schuf", "hat geschaffen", "создавать"],
-	["scheiden", "scheide", "schied", "ist geschieden", "разводиться"],
-	["scheinen", "scheine", "schien", "hat geschienen", "светить"],
-	["schieben", "schiebe", "schob", "hat geschoben", "толкать"],
-	["schießen", "schieße", "schoss", "hat geschossen", "стрелять"],
-	["schlafen", "schlafe", "schlief", "hat geschlafen", "спать"],
-	["schlagen", "schlage", "schlug", "hat geschlagen", "бить"],
-	["schleichen", "schleiche", "schlich", "ist geschlichen", "красться"],
-	["schließen", "schließe", "schloss", "hat geschlossen", "закрывать"],
-	["schmeißen", "schmeiße", "schmiss", "hat geschmissen", "бросать"],
-	["schmelzen", "schmelze", "schmolz", "ist geschmolzen", "плавить"],
-	["schneiden", "schneide", "schnitt", "hat geschnitten", "резать"],
-	["schreiben", "schreibe", "schrieb", "hat geschrieben", "писать"],
-	["schreien", "schreie", "schrie", "hat geschrien", "кричать"],
-	["schweigen", "schweige", "schwieg", "hat geschwiegen", "молчать"],
-	["schwimmen", "schwimme", "schwamm", "ist geschwommen", "плавать"],
-	["schwören", "schwöre", "schwor", "hat geschworen", "клясться"],
-	["sehen", "sehe", "sah", "hat gesehen", "видеть"],
-	["sein", "bin", "war", "ist gewesen", "быть"],
-	["senden", "sende", "sandte", "hat gesandt", "посылать"],
-	["singen", "singe", "sang", "hat gesungen", "петь"],
-	["sinken", "sinke", "sank", "ist gesunken", "тонуть"],
-	["sitzen", "sitze", "saß", "hat gesessen", "сидеть"],
-	["spinnen", "spinne", "spann", "hat gesponnen", "прясть"],
-	["sprechen", "spreche", "sprach", "hat gesprochen", "говорить"],
-	["springen", "springe", "sprang", "ist gesprungen", "прыгать"],
-	["stechen", "steche", "stach", "hat gestochen", "жалить"],
-	["stehen", "stehe", "stand", "hat gestanden", "стоять"],
-	["stehlen", "stehle", "stahl", "hat gestohlen", "воровать"],
-	["steigen", "steige", "stieg", "ist gestiegen", "подниматься"],
-	["sterben", "sterbe", "starb", "ist gestorben", "умирать"],
-	["stoßen", "stoße", "stieß", "hat gestoßen", "толкать"],
-	["streichen", "streiche", "strich", "hat gestrichen", "махать"],
-	["streiten", "streite", "stritt", "hat gestritten", "спорить"],
-	["tragen", "trage", "trug", "hat getragen", "носить"],
-	["treffen", "treffe", "traf", "hat getroffen", "встречать"],
-	["treiben", "treibe", "trieb", "hat getrieben", "гнать"],
-	["treten", "trete", "trat", "ist getreten", "входить"],
-	["trinken", "trinke", "trank", "hat getrunken", "пить"],
-	["tun", "tue", "tat", "hat getan", "делать"],
-	["überweisen", "überweise", "überwies", "hat überwiesen", "переводить"],
-	["unterscheiden", "unterscheide", "unterschied", "hat unterschieden", "различать"],
-	["verbieten", "verbiete", "verbot", "hat verboten", "запрещать"],
-	["verbinden", "verbinde", "verband", "hat verbunden", "связывать"],
-	["verderben", "verderbe", "verdarb", "hat verdorben", "портить"],
-	["vergessen", "vergesse", "vergaß", "hat vergessen", "забывать"],
-	["vergleichen", "vergleiche", "verglich", "hat verglichen", "сравнивать"],
-	["verlieren", "verliere", "verlor", "hat verloren", "терять"],
-	["vermeiden", "vermeide", "vermied", "hat vermieden", "избегать"],
-	["verzeihen", "verzeihe", "verzieh", "hat verziehen", "прощать"],
-	["wachsen", "wachse", "wuchs", "ist gewachsen", "расти"],
-	["waschen", "wasche", "wusch", "hat gewaschen", "мыть"],
-	["welchen", "welche", "welkte", "ist gewelkt", "увядать"],
-	["wenden", "wende", "wandte", "hat gewandt", "поворачивать"],
-	["werben", "werbe", "warb", "hat geworben", "рекламировать"],
-	["werden", "werde", "wurde", "ist geworden", "становиться"],
-	["werfen", "werfe", "warf", "hat geworfen", "бросать"],
-	["wiegen", "wiege", "wog", "hat gewogen", "весить"],
-	["wissen", "weiß", "wusste", "hat gewusst", "знать"],
-	["wollen", "will", "wollte", "hat gewollt", "хотеть"],
-	["ziehen", "ziehe", "zog", "hat gezogen", "тянуть"],
-	["zwingen", "zwinge", "zwang", "hat gezwungen", "заставлять"]
+	['gefallen', 'gefällt', 'gefiel', 'hat gefallen', 'нравиться'],
+	['gehen', 'geht', 'ging', 'ist gegangen', 'идти'],
+	['gelingen', 'gelingt', 'gelang', 'ist gelungen', 'удаваться'],
+	['gelten', 'gilt', 'galt', 'hat gegolten', 'действовать'],
+	['genießen', 'genießt', 'genoss', 'hat genossen', 'наслаждаться'],
+	['geschehen', 'geschieht', 'geschah', 'ist geschehen', 'происходить'],
+	['gewinnen', 'gewinnt', 'gewann', 'hat gewonnen', 'выигрывать'],
+	['gießen', 'gießt', 'goss', 'hat gegossen', 'лить'],
+	['gleiten', 'gleitet', 'glitt', 'ist geglitten', 'скользить'],
+	['graben', 'gräbt', 'grub', 'hat gegraben', 'копать'],
+	['greifen', 'greift', 'griff', 'hat gegriffen', 'хватать'],
+	['haben', 'hat', 'hatte', 'hat gehabt', 'иметь'],
+	['halten', 'hält', 'hielt', 'hat gehalten', 'держать'],
+	['hängen', 'hängt', 'hing', 'hat gehangen', 'висеть'],
+	['heben', 'hebt', 'hob', 'hat gehoben', 'поднимать'],
+	['heißen', 'heißt', 'hieß', 'hat geheißen', 'звать'],
+	['helfen', 'hilft', 'half', 'hat geholfen', 'помогать'],
+	['kennen', 'kennt', 'kannte', 'hat gekannt', 'знать'],
+	['klingen', 'klingt', 'klang', 'hat geklungen', 'звучать'],
+	['kommen', 'kommt', 'kam', 'ist gekommen', 'приходить'],
+	['können', 'kann', 'konnte', 'hat gekonnt', 'мочь'],
+	['laden', 'lädt', 'lud', 'hat geladen', 'загружать'],
+	['lassen', 'lässt', 'ließ', 'hat gelassen', 'позволять'],
+	['laufen', 'läuft', 'lief', 'ist gelaufen', 'бежать'],
+	['leiden', 'leidet', 'litt', 'hat gelitten', 'страдать'],
+	['leihen', 'leiht', 'lieh', 'hat geliehen', 'одолжить'],
+	['lesen', 'liest', 'las', 'hat gelesen', 'читать'],
+	['liegen', 'liegt', 'lag', 'hat gelegen', 'лежать'],
+	['lügen', 'lügt', 'log', 'hat gelogen', 'врать'],
+	['messen', 'misst', 'maß', 'hat gemessen', 'измерять'],
+	['mögen', 'mag', 'mochte', 'hat gemocht', 'любить'],
+	['müssen', 'muss', 'musste', 'hat gemusst', 'должен'],
+	['nehmen', 'nimmt', 'nahm', 'hat genommen', 'брать'],
+	['nennen', 'nennt', 'nannte', 'hat genannt', 'называть'],
+	['pfeifen', 'pfeift', 'pfiff', 'hat gepfiffen', 'свистеть'],
+	['raten', 'rät', 'riet', 'hat geraten', 'советовать'],
+	['reiben', 'reibt', 'rieb', 'hat gerieben', 'тереть'],
+	['reißen', 'reißt', 'riss', 'hat gerissen', 'рвать'],
+	['reiten', 'reitet', 'ritt', 'ist geritten', 'ездить верхом'],
+	['riechen', 'riecht', 'roch', 'hat gerochen', 'пахнуть'],
+	['rufen', 'ruft', 'rief', 'hat gerufen', 'кричать'],
+	['saufen', 'säuft', 'soff', 'hat gesoffen', 'пить (животное)'],
+	['schaffen', 'schafft', 'schuf', 'hat geschaffen', 'создавать'],
+	['scheiden', 'scheidet', 'schied', 'ist geschieden', 'разводиться'],
+	['scheinen', 'scheint', 'schien', 'hat geschienen', 'светить'],
+	['schieben', 'schiebt', 'schob', 'hat geschoben', 'толкать'],
+	['schießen', 'schießt', 'schoss', 'hat geschossen', 'стрелять'],
+	['schlafen', 'schläft', 'schlief', 'hat geschlafen', 'спать'],
+	['schlagen', 'schlägt', 'schlug', 'hat geschlagen', 'бить'],
+	['schleichen', 'schleicht', 'schlich', 'ist geschlichen', 'красться'],
+	['schließen', 'schließt', 'schloss', 'hat geschlossen', 'закрывать'],
+	['schmeißen', 'schmeißt', 'schmiss', 'hat geschmissen', 'бросать'],
+	['schmelzen', 'schmilzt', 'schmolz', 'ist geschmolzen', 'плавить'],
+	['schneiden', 'schneidet', 'schnitt', 'hat geschnitten', 'резать'],
+	['schreiben', 'schreibt', 'schrieb', 'hat geschrieben', 'писать'],
+	['schreien', 'schreit', 'schrie', 'hat geschrien', 'кричать'],
+	['schweigen', 'schweigt', 'schwieg', 'hat geschwiegen', 'молчать'],
+	['schwimmen', 'schwimmt', 'schwamm', 'ist geschwommen', 'плавать'],
+	['schwören', 'schwört', 'schwor', 'hat geschworen', 'клясться'],
+	['sehen', 'sieht', 'sah', 'hat gesehen', 'видеть'],
+	['sein', 'ist', 'war', 'ist gewesen', 'быть'],
+	['senden', 'sendet', 'sandte', 'hat gesandt', 'посылать'],
+	['singen', 'singt', 'sang', 'hat gesungen', 'петь'],
+	['sinken', 'sinkt', 'sank', 'ist gesunken', 'тонуть'],
+	['sitzen', 'sitzt', 'saß', 'hat gesessen', 'сидеть'],
+	['spinnen', 'spinnt', 'spann', 'hat gesponnen', 'прясть'],
+	['sprechen', 'spricht', 'sprach', 'hat gesprochen', 'говорить'],
+	['springen', 'springt', 'sprang', 'ist gesprungen', 'прыгать'],
+	['stechen', 'sticht', 'stach', 'hat gestochen', 'колоть'],
+	['stehen', 'steht', 'stand', 'hat gestanden', 'стоять'],
+	['stehlen', 'stiehlt', 'stahl', 'hat gestohlen', 'красть'],
+	['steigen', 'steigt', 'stieg', 'ist gestiegen', 'подниматься'],
+	['sterben', 'stirbt', 'starb', 'ist gestorben', 'умирать'],
+	['stoßen', 'stößt', 'stieß', 'hat gestoßen', 'толкать'],
+	['streichen', 'streicht', 'strich', 'hat gestrichen', 'красить'],
+	['streiten', 'streitet', 'stritt', 'hat gestritten', 'спорить'],
+	['tragen', 'trägt', 'trug', 'hat getragen', 'носить'],
+	['treffen', 'trifft', 'traf', 'hat getroffen', 'встречать'],
+	['treiben', 'treibt', 'trieb', 'hat getrieben', 'гнать'],
+	['treten', 'tritt', 'trat', 'hat getreten', 'наступать'],
+	['trinken', 'trinkt', 'trank', 'hat getrunken', 'пить'],
+	['tun', 'tut', 'tat', 'hat getan', 'делать'],
+	['vergessen', 'vergisst', 'vergaß', 'hat vergessen', 'забывать'],
+	['verlieren', 'verliert', 'verlor', 'hat verloren', 'терять'],
+	['verzeihen', 'verzeiht', 'verzieh', 'hat verziehen', 'прощать'],
+	['wachsen', 'wächst', 'wuchs', 'ist gewachsen', 'расти'],
+	['waschen', 'wäscht', 'wusch', 'hat gewaschen', 'мыть'],
+	['weichen', 'weicht', 'wich', 'ist gewichen', 'отступать'],
+	['weisen', 'weist', 'wies', 'hat gewiesen', 'указывать'],
+	['wenden', 'wendet', 'wandte', 'hat gewandt', 'поворачивать'],
+	['werben', 'wirbt', 'warb', 'hat geworben', 'рекламировать'],
+	['werden', 'wird', 'wurde', 'ist geworden', 'становиться'],
+	['werfen', 'wirft', 'warf', 'hat geworfen', 'бросать'],
+	['wiegen', 'wiegt', 'wog', 'hat gewogen', 'взвешивать'],
+	['wissen', 'weiß', 'wusste', 'hat gewusst', 'знать'],
+	['ziehen', 'zieht', 'zog', 'hat gezogen', 'тянуть'],
+	['zwingen', 'zwingt', 'zwang', 'hat gezwungen', 'принуждать']
 ];
 
 export const verbsMitPrep = [
 	// 46 verbs
-	[["sich entscheiden", "für"], ["Die Familie entscheidet sich", "für", "die Wohnung mit Balkon."], "Решаться на ..., Принимать решение в пользу ..."],
-	[["sich entschuldigen", "für"], ["Wir entschuldigen uns", "für", "die Verspätung."], "Извиняться за ..., Просить прощение за..."],
-	[["sich erinnern", "an"], ["Akono erinnert sich", "an", "seine Kindheit."], "Вспоминать о ..."],
-	[["erkennen", "an"], ["Ich habe ihn", "an", "der Stimme erkannt."], "Узнавать по ..."],
-	[["sich freuen", "über"], ["Vielen Dank! Ich freue mich", "über", "die Blumen."], "Радоваться чему либо в прошлом или настоящем"],
-	[["sich freuen", "auf"], ["Die Kinder freuen sich", "auf", "Weihnachten"], "Радоваться чему либо в будущем"],
-	[["gehen", "um"], ["Es geht heute", "um", "das Präteritum."], "Речь идет о ..."],
-	[["sich gewöhnen", "an"], ["Haben Sie sich schon", "an", "das deutsche Brot gewöhnt?"], "Привыкать к ..."],
-	[["glauben", "an"], ["Wir glauben", "an", "eine erfolgreiche Zukunft."], "Верить в ..."],
-	[["sich halten", "an"], ["Der Mann hält sich", "an", "die Regeln."], "Придерживаться, соблюдать"],
-	[["sich handeln", "um"], ["Es handelt sich", "um", "eine exotische Frucht."], "Речь идет о ..., Дело касается ..."],
-	[["hoffen", "auf"], ["Sie hofft", "auf", "gutes Wetter."], "Надеяться на ..."],
-	[["sich interessieren", "für"], ["Wafaa interessiert sich", "für", "Basketball."], "Интересоваться чем либо"],
-	[["sich konzentrieren", "auf"], ["Ich konzentriere mich", "auf", "meine Arbeit."], "Сконцентриорваться на чем либо"],
-	[["sich kümmern", "um"], ["Sie kümmert sich", "um", "ihre alten Eltern."], "Заботиться о ..., Беспокоиться о ..."],
-	[["lachen", "über"], ["Wir lachen", "über", "den guten Witz."], "Смеяться над ..."],
-	[["nachdenken", "über"], ["Worüber denkst du oft", "nach?"], "Размышлять о ..., Думать о ...,"],
-	[["schreiben", "über"], ["Wir schreiben", "über", "unseren letzten Urlaub."], "Писать о ..."],
-	[["sorgen", "für"], ["Die Eltern sorgen", "für", "ihre Kinder."], "Заботиться о ..., Обеспечивать"],
-	[["sprechen", "über"], ["Er spricht", "über", "das Fußballspiel."], "Говорить о ..., Обсуждать"],
-	[["staunen", "über"], ["Der Lehrer staunt", "über", "den Fleiß der Schüler."], "Удивляться чему либо, Быть пораженным чем либо"],
-	[["teilnehmen", "an"], ["Wir nehmen alle", "an", "der Prüfung teil."], "Участвовать в ..."],
-	[["sich treffen", "mit"], ["Er trifft sich am Samstag", "mit", "seinen Freunden."], "Встречаться"],
-	[["sich unterhalten", "über"], ["Sandro und Karim unterhalten sich", "über", "Fußball."], "Разговаривать о ..., Беседовать о..."],
-	[["sich verlassen", "auf"], ["Er verlässt sich", "auf", "seinen Kollegen."], "Положиться на ..., Доверяться"],
-	[["verstoßen", "gegen"], ["Der Dieb verstößt", "gegen", "Gesetze."], "Нарушить, Пойти против (правил)"],
-	[["verzichten", "auf"], ["Sie kann", "auf", "Kaffee nicht verzichten."], "Отказываться от ..., Воздерживаться от..."],
-	[["sich vorbereiten", "auf"], ["Wir bereiten uns", "auf", "den Ausflug vor."], "Подготовиться"],
-	[["warten", "auf"], ["Morgens warten viele Leute", "auf", "den Bus."], "Ждать, Ожидать чего либо"],
-	[["sich wundern", "über"], ["Karim wundert sich", "über", "die deutschen Traditionen."], "Удивляться чему либо"],
-	[["zubereiten", "aus"], ["Wir bereiten das Essen heute nur", "aus", "frischen Produkten zu."], "Приготовить из"],
-	[["achten", "auf"], ["Worauf sollte man", "bei", "der Berufswahl achten?"], "Обращать внимание на, Следить за"],
-	[["ankommen", "auf"], ["Es kommt", "auf", "die persönlichen Interessen an."], "Зависеть от, Иметь значение"],
-	[["sich anpassen", "an"], ["In einem fremden Land sollte man sich", "an", "die wichtigen Gepflogenheiten anpassen."], "Приспособиться к, Адаптироваться к"],
-	[["aufkommen", "für"], ["Malaika Hadrawi kann", "für", "ihren Lebensunterhalt aufkommen."], "Брать на себя ответственность за, Оплачивать"],
-	[["sich aufregen", "über"], ["Die Menschen regen sich", "über", "die hohen Benzinpreise auf."], "Волноваться из-за, Раздражаться из-за"],
-	[["sich bedanken", "für"], ["Ich möchte mich", "für", "deine Hilfe bedanken."], "Благодарить за"],
-	[["sich beklagen", "über"], ["Die alte Dame beklagt sich", "über", "das Essen im Krankenhaus."], "Жаловаться на"],
-	[["sich bemühen", "um"], ["Toma Popescu hat sich in Rumänien erfolglos", "um", "eine Arbeitsstelle bemüht."], "Стараться добиться, Прилагать усилия"],
-	[["sich beschweren", "über"], ["Die Nachbarn beschweren sich", "über", "den Dreck im Treppenhaus."], "Жаловаться на"],
-	[["sich bewerben", "um"], ["Die Stelle ist toll! Bewirbst du dich", "um", "sie?"], "Подавать заявку на, Соискать"],
-	[["bitten", "um"], ["Malaika Hadrawi bittet eine Kollegin", "um", "Hilfe bei der Betreuung ihres Kindes."], "Просить о"],
-	[["denken", "an"], ["Denken Sie", "an", "den Lebenslauf?"], "Думать о, Вспоминать о"],
-	[["diskutieren", "über"], ["Worüber diskutiert ihr denn gerade", "über?", ""], "Обсуждать, Дискутировать о"],
-	[["sich entschuldigen", "für"], ["Er entschuldigt sich", "für", "die Verspätung."], "Извиняться за"],
-	[["sich erinnern", "an"], ["Anita Jiménez erinnert sich oft", "an", "ihre Freunde in Argentinien."], "Вспоминать о, Помнить о"]
+	[
+		["sich entscheiden", "für"],
+		["Die Familie entscheidet sich", "für", "die Wohnung mit Balkon."],
+		["Решаться на ..., Принимать решение в пользу ..."]
+	],
+	[
+		["sich entschuldigen", "für"],
+		["Wir entschuldigen uns", "für", "die Verspätung."],
+		["Извиняться за ..., Просить прощение за..."]
+	],
+	[
+		["sich erinnern", "an"],
+		["Akono erinnert sich", "an", "seine Kindheit."],
+		["Вспоминать о ..."]
+	],
+	[
+		["erkennen", "an"],
+		["Ich habe ihn", "an", "der Stimme erkannt."],
+		["Узнавать по ..."]
+	],
+	[
+		["sich freuen", "über"],
+		["Vielen Dank! Ich freue mich", "über", "die Blumen."],
+		["Радоваться чему либо в прошлом или настоящем"]
+	],
+	[
+		["sich freuen", "auf"],
+		["Die Kinder freuen sich", "auf", "Weihnachten"],
+		["Радоваться чему либо в будущем"]
+	],
+	[
+		["gehen", "um"],
+		["Es geht heute", "um", "das Präteritum."],
+		["Речь идет о ..."]
+	],
+	[
+		["sich gewöhnen", "an"],
+		["Haben Sie sich schon", "an", "das deutsche Brot gewöhnt?"],
+		["Привыкать к ..."]
+	],
+	[
+		["glauben", "an"],
+		["Wir glauben", "an", "eine erfolgreiche Zukunft."],
+		["Верить в ..."]
+	],
+	[
+		["sich halten", "an"],
+		["Der Mann hält sich", "an", "die Regeln."],
+		["Придерживаться, соблюдать"]
+	],
+	[
+		["sich handeln", "um"],
+		["Es handelt sich", "um", "eine exotische Frucht."],
+		["Речь идет о ..., Дело касается ..."]
+	],
+	[
+		["hoffen", "auf"],
+		["Sie hofft", "auf", "gutes Wetter."],
+		["Надеяться на ..."]
+	],
+	[
+		["sich interessieren", "für"],
+		["Wafaa interessiert sich", "für", "Basketball."],
+		["Интересоваться чем либо"]
+	],
+	[
+		["sich konzentrieren", "auf"],
+		["Ich konzentriere mich", "auf", "meine Arbeit."],
+		["Сконцентриорваться на чем либо"]
+	],
+	[
+		["sich kümmern", "um"],
+		["Sie kümmert sich", "um", "ihre alten Eltern."],
+		["Заботиться о ..., Беспокоиться о ..."]
+	],
+	[
+		["lachen", "über"],
+		["Wir lachen", "über", "den guten Witz."],
+		["Смеяться над ..."]
+	],
+	[
+		["nachdenken", "über"],
+		["Worüber denkst du oft", "nach?"],
+		["Размышлять о ..., Думать о ...,"]
+	],
+	[
+		["schreiben", "über"],
+		["Wir schreiben", "über", "unseren letzten Urlaub."],
+		["Писать о ..."]
+	],
+	[
+		["sorgen", "für"],
+		["Die Eltern sorgen", "für", "ihre Kinder."],
+		["Заботиться о ..., Обеспечивать"]
+	],
+	[
+		["sprechen", "über"],
+		["Er spricht", "über", "das Fußballspiel."],
+		["Говорить о ..., Обсуждать"]
+	],
+	[
+		["staunen", "über"],
+		["Der Lehrer staunt", "über", "den Fleiß der Schüler."],
+		["Удивляться чему либо, Быть пораженным чем либо"]
+	],
+	[
+		["teilnehmen", "an"],
+		["Wir nehmen alle", "an", "der Prüfung teil."],
+		["Участвовать в ..."]
+	],
+	[
+		["sich treffen", "mit"],
+		["Er trifft sich am Samstag", "mit", "seinen Freunden."],
+		["Встречаться"]
+	],
+	[
+		["sich unterhalten", "über"],
+		["Sandro und Karim unterhalten sich", "über", "Fußball."],
+		["Разговаривать о ..., Беседовать о..."]
+	],
+	[
+		["sich verlassen", "auf"],
+		["Er verlässt sich", "auf", "seinen Kollegen."],
+		["Положиться на ..., Доверяться"]
+	],
+	[
+		["verstoßen", "gegen"],
+		["Der Dieb verstößt", "gegen", "Gesetze."],
+		["Нарушить, Пойти против (правил)"]
+	],
+	[
+		["verzichten", "auf"],
+		["Sie kann", "auf", "Kaffee nicht verzichten."],
+		["Отказываться от ..., Воздерживаться от..."]
+	],
+	[
+		["sich vorbereiten", "auf"],
+		["Wir bereiten uns", "auf", "den Ausflug vor."],
+		["Подготовиться"]
+	],
+	[
+		["warten", "auf"],
+		["Morgens warten viele Leute", "auf", "den Bus."],
+		["Ждать, Ожидать чего либо"]
+	],
+	[
+		["sich wundern", "über"],
+		["Karim wundert sich", "über", "die deutschen Traditionen."],
+		["Удивляться чему либо"]
+	],
+	[
+		["zubereiten", "aus"],
+		["Wir bereiten das Essen heute nur", "aus", "frischen Produkten zu."],
+		["Приготовить из"]
+	],
+	[
+		["achten", "auf"],
+		["Worauf sollte man", "bei", "der Berufswahl achten?"],
+		["Обращать внимание на, Следить за"]
+	],
+	[
+		["ankommen", "auf"],
+		["Es kommt", "auf", "die persönlichen Interessen an."],
+		["Зависеть от, Иметь значение"]
+	],
+	[
+		["sich anpassen", "an"],
+		["In einem fremden Land sollte man sich", "an", "die wichtigen Gepflogenheiten anpassen."],
+		["Приспособиться к, Адаптироваться к"]
+	],
+	[
+		["aufkommen", "für"],
+		["Malaika Hadrawi kann", "für", "ihren Lebensunterhalt aufkommen."],
+		["Брать на себя ответственность за, Оплачивать"]
+	],
+	[
+		["sich aufregen", "über"],
+		["Die Menschen regen sich", "über", "die hohen Benzinpreise auf."],
+		["Волноваться из-за, Раздражаться из-за"]
+	],
+	[
+		["sich bedanken", "für"],
+		["Ich möchte mich", "für", "deine Hilfe bedanken."],
+		["Благодарить за"]
+	],
+	[
+		["sich beklagen", "über"],
+		["Die alte Dame beklagt sich", "über", "das Essen im Krankenhaus."],
+		["Жаловаться на"]
+	],
+	[
+		["sich bemühen", "um"],
+		["Toma Popescu hat sich in Rumänien erfolglos", "um", "eine Arbeitsstelle bemüht."],
+		["Стараться добиться, Прилагать усилия"]
+	],
+	[
+		["sich beschweren", "über"],
+		["Die Nachbarn beschweren sich", "über", "den Dreck im Treppenhaus."],
+		["Жаловаться на"]
+	],
+	[
+		["sich bewerben", "um"],
+		["Die Stelle ist toll! Bewirbst du dich", "um", "sie?"],
+		["Подавать заявку на, Соискать"]
+	],
+	[
+		["bitten", "um"],
+		["Malaika Hadrawi bittet eine Kollegin", "um", "Hilfe bei der Betreuung ihres Kindes."],
+		["Просить о"]
+	],
+	[
+		["denken", "an"],
+		["Denken Sie", "an", "den Lebenslauf?"],
+		["Думать о, Вспоминать о"]
+	],
+	[
+		["diskutieren", "über"],
+		["Worüber diskutiert ihr denn gerade", "über?", ""],
+		["Обсуждать, Дискутировать о"]
+	],
+	[
+		["sich entschuldigen", "für"],
+		["Er entschuldigt sich", "für", "die Verspätung."],
+		["Извиняться за"]
+	],
+	[
+		["sich erinnern", "an"],
+		["Anita Jiménez erinnert sich oft", "an", "ihre Freunde in Argentinien."],
+		["Вспоминать о, Помнить о"]
+	]
 ];
 
 export const commonPrepositions = [
