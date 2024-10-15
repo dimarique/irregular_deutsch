@@ -61,16 +61,11 @@ elements.buttons.forEach((button, index) => {
 			});
 		} else {
 			button.classList.add('animated');
-			/*
-			 *setTimeout(() => {
-			 *    button.classList.remove('animated');
-			 *}, 100);
-			 */
 		}
 	});
 });
 elements.nextButton.addEventListener('click', function() {
-	location.reload();
+	loadNewCard()
 	return false;
 });
 
@@ -81,3 +76,24 @@ function randomCard() {
 }
 
 elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
+function loadNewCard() {
+	elements.cardNumber = randomCard();
+	elements.prepToHide = verbsMitPrep[elements.cardNumber][0][1];
+
+	const wordsWithoutSpecial = commonPrepositions.filter(word => word !== elements.prepToHide);
+	elements.randomWords = getRandomWords(wordsWithoutSpecial, 4);
+
+	elements.beispilText.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][1].join(' '));
+	elements.verbMitPrep.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][0].join(' '));
+
+	elements.buttons.forEach((button, index) => {
+		button.classList.remove('correct_answer', 'animated');
+		if (index === elements.specialWordButtonIndex) {
+			button.textContent = elements.prepToHide;
+		} else {
+			button.textContent = elements.randomWords.pop();
+		}
+	});
+
+	elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
+}

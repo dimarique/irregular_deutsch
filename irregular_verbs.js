@@ -31,8 +31,7 @@ function showHidden() {
 }
 
 elements.nextButton.addEventListener('click', function() {
-	location.reload();
-	return false;
+	loadNewCard()
 });
 
 
@@ -42,3 +41,16 @@ elements.searchButton.addEventListener('click', searchBarToggle);
 selectors.forEach((selector, index) => {
 	document.querySelector(selector).innerText = words[elements.cardNumber][index];
 });
+function loadNewCard() {
+	elements.cardNumber = randomCard();
+
+	// Update text fields with new word forms
+	selectors.forEach((selector, index) => {
+		document.querySelector(selector).innerText = words[elements.cardNumber][index];
+	});
+
+	// Re-hide the hidden words
+	elements.hiddenWord.forEach(function(word) {
+		word.classList.add('hidden_word_IV');
+	});
+}
