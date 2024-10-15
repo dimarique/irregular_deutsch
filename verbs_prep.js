@@ -55,14 +55,17 @@ elements.buttons.forEach((button, index) => {
 
 	button.addEventListener('click', () => {
 		if (button.textContent === elements.prepToHide) {
+			button.classList.add('correct_answer');
 			document.querySelectorAll('.hidden_word').forEach(span => {
 				span.classList.remove('hidden_word');
 			});
 		} else {
 			button.classList.add('animated');
-			setTimeout(() => {
-				button.classList.remove('animated');
-			}, 100);
+			/*
+			 *setTimeout(() => {
+			 *    button.classList.remove('animated');
+			 *}, 100);
+			 */
 		}
 	});
 });

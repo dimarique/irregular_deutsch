@@ -168,6 +168,10 @@ a {
 	animation: errorAnim 0.1s 1;
 }
 
+.correct_answer {
+	background-color: hsla(120, 100%, 50%, 0.75);
+}
+
 /* Start buttons block */
 .buttons_wrapper {
 	width: 100%;
