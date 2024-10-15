@@ -60,7 +60,7 @@ elements.buttons.forEach((button, index) => {
 				span.classList.remove('hidden_word');
 			});
 		} else {
-			button.classList.add('animated');
+			button.classList.add('wrong_answer');
 		}
 	});
 });
@@ -87,7 +87,7 @@ function loadNewCard() {
 	elements.verbMitPrep.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][0].join(' '));
 
 	elements.buttons.forEach((button, index) => {
-		button.classList.remove('correct_answer', 'animated');
+		button.classList.remove('correct_answer', 'wrong_answer');
 		if (index === elements.specialWordButtonIndex) {
 			button.textContent = elements.prepToHide;
 		} else {
