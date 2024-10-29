@@ -41,6 +41,7 @@ elements.searchButton.addEventListener('click', searchBarToggle);
 selectors.forEach((selector, index) => {
 	document.querySelector(selector).innerText = words[elements.cardNumber][index];
 });
+
 function loadNewCard() {
 	elements.cardNumber = randomCard();
 
