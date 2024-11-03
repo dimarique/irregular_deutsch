@@ -7,17 +7,19 @@ const elements = {
 	checkButton: document.querySelector('.check_btn'),
 	nextButton: document.querySelector('.next_btn'),
 	hiddenWord: document.querySelectorAll('.hidden_word_IV'),
-	searchButton: document.querySelector('.searchToggler'),
-	searchBar: document.querySelector('.searchBar'),
+	//searchButton: document.querySelector('.searchToggler'),
+	//searchBar: document.querySelector('.searchBar'),
 	cardNumber: randomCard()
 };
 const selectors = ['.first_form', '.second_form', '.third_form', '.fourth_form', '.translate'];
 
 //Toggle visibility of the search bar
-function searchBarToggle() {
-	elements.searchBar.classList.toggle('hidden');
-	elements.searchBar.value = '';
-}
+/*
+ *function searchBarToggle() {
+ *    elements.searchBar.classList.toggle('hidden');
+ *    elements.searchBar.value = '';
+ *}
+ */
 
 function randomCard() {
 	return Math.floor(Math.random() * words.length);
@@ -36,7 +38,7 @@ elements.nextButton.addEventListener('click', function() {
 
 
 elements.checkButton.addEventListener('click', showHidden);
-elements.searchButton.addEventListener('click', searchBarToggle);
+//elements.searchButton.addEventListener('click', searchBarToggle);
 
 selectors.forEach((selector, index) => {
 	document.querySelector(selector).innerText = words[elements.cardNumber][index];
