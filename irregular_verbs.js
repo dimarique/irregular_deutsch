@@ -6,7 +6,7 @@ window.words = words
 const elements = {
 	checkButton: document.querySelector('.check_btn'),
 	nextButton: document.querySelector('.next_btn'),
-	hiddenWord: document.querySelectorAll('.hidden_word_IV'),
+	hiddenWord: document.querySelectorAll('.hidden_word_irregular'),
 	//searchButton: document.querySelector('.searchToggler'),
 	//searchBar: document.querySelector('.searchBar'),
 	cardNumber: randomCard()
@@ -28,7 +28,7 @@ function randomCard() {
 //Shows hidden words
 function showHidden() {
 	elements.hiddenWord.forEach(function(word) {
-		word.classList.remove('hidden_word_IV');
+		word.classList.remove('hidden_word_irregular');
 	})
 }
 
@@ -54,6 +54,6 @@ function loadNewCard() {
 
 	// Re-hide the hidden words
 	elements.hiddenWord.forEach(function(word) {
-		word.classList.add('hidden_word_IV');
+		word.classList.add('hidden_word_irregular');
 	});
 }

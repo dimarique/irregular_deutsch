@@ -47,13 +47,21 @@ a {
 	border-bottom: 1px solid var(--mainDarkColor);
 }
 
-.nav_pane .zweite {
+/*.nav_pane .zweite {*/
+/*text-decoration: underline;*/
+/*}*/
+
+/*.nav_pane .erste {*/
+/*text-decoration: underline;*/
+/*}*/
+.nav_pane .nav_button {
 	text-decoration: underline;
 }
 
-.nav_pane .erste {
-	text-decoration: underline;
+.nav_pane .inactive {
+	text-decoration: none;
 }
+
 
 .content_wrapper {
 	color: var(--mainDarkColor);
@@ -101,7 +109,7 @@ a {
 	border-radius: 6px;
 }
 
-.hidden_word_IV {
+.hidden_word_irregular {
 	color: transparent;
 }
 
@@ -199,7 +207,7 @@ button {
 			background-color: var(--mainDarkColor);
 		}
 
-		.hidden_word_IV {
+		.hidden_word_irregular {
 			color: transparent;
 		}
 
