@@ -8,8 +8,6 @@ window.randomCard = randomCard
 
 const elements = {
 	nextButton: document.querySelector('.next_btn'),
-	searchButton: document.querySelector('.searchToggler'),
-	searchBar: document.querySelector('.searchBar'),
 	beispilText: document.querySelector('.beispil'),
 	verbMitPrep: document.querySelector('.verbMitPrep'),
 	explanation: document.querySelector('.explanation'),
@@ -41,11 +39,6 @@ elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
 elements.beispilText.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][1].join(' '));
 elements.verbMitPrep.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][0].join(' '));
 
-//Toggle visibility of the search bar
-function searchBarToggle() {
-	elements.searchBar.classList.toggle('hidden');
-	elements.searchBar.value = '';
-}
 
 elements.buttons.forEach((button, index) => {
 	if (index === elements.specialWordButtonIndex) {
@@ -71,7 +64,6 @@ elements.nextButton.addEventListener('click', function() {
 	return false;
 });
 
-elements.searchButton.addEventListener('click', searchBarToggle);
 
 function randomCard() {
 	return (Math.floor(Math.random() * verbsMitPrep.length));

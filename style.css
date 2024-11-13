@@ -1,6 +1,16 @@
 :root {
-	--mainDarkColor: hsl(206, 64%, 27%);
-	--mainWhiteColor: hsl(206, 64%, 92%);
+	/*--mainDarkColor: hsl(206, 64%, 27%);*/
+	/*--mainWhiteColor: hsl(206, 64%, 92%);*/
+	/*--mainDarkColor: hsl(234, 30%, 21%);*/
+	/*--mainWhiteColor: hsl(230, 89%, 74%);*/
+
+	/*Light theme*/
+	--day-background-color: hsl(206, 64%, 92%);
+	--day-text-color: hsl(206, 64%, 27%);
+
+	/*Dark theme*/
+	--night-background-color: hsl(234, 30%, 21%);
+	--night-text-color: hsl(230, 89%, 74%);
 }
 
 * {
@@ -39,21 +49,13 @@ a {
 .nav_pane {
 	display: flex;
 	justify-content: space-between;
-	/*background-color: var(--mainWhiteColor);*/
-	color: var(--mainDarkColor);
+	color: var(--day-text-color);
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 12px;
-	border-bottom: 1px solid var(--mainDarkColor);
+	border-bottom: 1px solid var(--day-text-color);
 }
 
-/*.nav_pane .zweite {*/
-/*text-decoration: underline;*/
-/*}*/
-
-/*.nav_pane .erste {*/
-/*text-decoration: underline;*/
-/*}*/
 .nav_pane .nav_button {
 	text-decoration: underline;
 }
@@ -64,7 +66,7 @@ a {
 
 
 .content_wrapper {
-	color: var(--mainDarkColor);
+	color: var(--day-text-color);
 	display: flex;
 	margin-top: 20px;
 	flex-direction: column;
@@ -104,7 +106,7 @@ a {
 }
 
 .hidden_word {
-	background-color: yellow;
+	background-color: hsl(60, 100%, 50%);
 	color: transparent;
 	border-radius: 6px;
 }
@@ -172,20 +174,22 @@ a {
 }
 
 button {
-	all: unset;
-	color: var(--mainDarkColor);
-	width: 30%;
+	background: none;
+	/*background-color: #4d578e;*/
+	border: none;
+	width: 49%;
+	outline: none;
+	color: var(--day-text-color);
 	padding: 10px 30px;
 	font-size: 1.25rem;
+	font-family: inherit;
+	font-variant: small-caps;
 	cursor: pointer;
 	border: 1px solid;
-	border-radius: 5px;
+	border-radius: 25px;
 	text-align: center;
-	font-variant: small-caps;
 	box-shadow: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
 }
-
-/* End buttons block */
 
 @media (prefers-color-scheme:dark) {
 	body {
@@ -193,18 +197,18 @@ button {
 	}
 
 	.page_wrapper {
-		background-color: var(--mainDarkColor);
+		background-color: var(--night-background-color);
 
 		.nav_pane {
 			background-color: var(--mainDarkColor);
-			color: var(--mainWhiteColor);
-			border-bottom: 1px solid var(--mainWhiteColor);
+			color: var(--night-text-color);
+			border-bottom: 1px solid var(--night-text-color);
 		}
 
 
 		.content_wrapper {
-			color: var(--mainWhiteColor);
-			background-color: var(--mainDarkColor);
+			color: var(--night-text-color);
+			background-color: var(--night-background-color);
 		}
 
 		.hidden_word_irregular {
@@ -212,10 +216,12 @@ button {
 		}
 
 		.prep {
-			border: 1px solid var(--mainWhiteColor);
+			border: 1px solid var(--night-text-color);
 		}
 
 		button {
-			color: var(--mainWhiteColor);
+			/*color: var(--mainWhiteColor);*/
+			color: white;
+			box-shadow: none;
 		}
 	}
