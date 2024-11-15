@@ -1,8 +1,4 @@
 :root {
-	/*--mainDarkColor: hsl(206, 64%, 27%);*/
-	/*--mainWhiteColor: hsl(206, 64%, 92%);*/
-	/*--mainDarkColor: hsl(234, 30%, 21%);*/
-	/*--mainWhiteColor: hsl(230, 89%, 74%);*/
 
 	/*Light theme*/
 	--day-background-color: hsl(206, 64%, 92%);
@@ -23,7 +19,6 @@ body {
 	height: 80vh;
 	min-height: 550px;
 }
-
 
 a {
 	text-decoration: none;
@@ -64,7 +59,6 @@ a {
 	text-decoration: none;
 }
 
-
 .content_wrapper {
 	color: var(--day-text-color);
 	display: flex;
@@ -73,7 +67,6 @@ a {
 	align-items: center;
 	justify-content: space-evenly;
 }
-
 
 /* Start words block */
 .words_wrapper {
@@ -198,30 +191,30 @@ button {
 
 	.page_wrapper {
 		background-color: var(--night-background-color);
-
-		.nav_pane {
-			background-color: var(--mainDarkColor);
-			color: var(--night-text-color);
-			border-bottom: 1px solid var(--night-text-color);
-		}
-
-
-		.content_wrapper {
-			color: var(--night-text-color);
-			background-color: var(--night-background-color);
-		}
-
-		.hidden_word_irregular {
-			color: transparent;
-		}
-
-		.prep {
-			border: 1px solid var(--night-text-color);
-		}
-
-		button {
-			/*color: var(--mainWhiteColor);*/
-			color: white;
-			box-shadow: none;
-		}
 	}
+
+	.nav_pane {
+		color: var(--night-text-color);
+		border-bottom: 1px solid var(--night-text-color);
+	}
+
+
+	.content_wrapper {
+		color: var(--night-text-color);
+		background-color: var(--night-background-color);
+	}
+
+	.hidden_word_irregular {
+		color: transparent;
+	}
+
+	.prep {
+		border: 1px solid var(--night-text-color);
+	}
+
+	button {
+		/*color: var(--mainWhiteColor);*/
+		color: white;
+		box-shadow: none;
+	}
+}
