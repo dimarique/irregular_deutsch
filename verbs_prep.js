@@ -2,12 +2,15 @@ import { commonPrepositions } from './data.js'
 import { verbsMitPrep } from './data.js'
 
 //in debugging purpose
-window.commonPrepositions = commonPrepositions
-window.verbsMitPrep = verbsMitPrep
-window.randomCard = randomCard
+/*
+ *window.commonPrepositions = commonPrepositions
+ *window.verbsMitPrep = verbsMitPrep
+ *window.randomCard = randomCard
+ */
 
 const elements = {
 	nextButton: document.querySelector('.next_btn'),
+	translateButton: document.querySelector('.translate_btn'),
 	beispilText: document.querySelector('.beispil'),
 	verbMitPrep: document.querySelector('.verbMitPrep'),
 	explanation: document.querySelector('.explanation'),
@@ -33,6 +36,10 @@ function getRandomWords(arr, count) {
 function hidePrepInText(text) {
 	const hiddenWord = `<span class="hidden_word">${elements.prepToHide}</span>`;
 	return text.replace(elements.prepToHide, hiddenWord);
+}
+
+function showHint() {
+	elements.explanation.style.color = 'hsl(206, 64%, 27%)';
 }
 
 elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
@@ -64,6 +71,10 @@ elements.nextButton.addEventListener('click', function() {
 	return false;
 });
 
+elements.translateButton.addEventListener('click', function() {
+	showHint()
+});
+
 
 function randomCard() {
 	return (Math.floor(Math.random() * verbsMitPrep.length));
@@ -72,6 +83,7 @@ function randomCard() {
 function loadNewCard() {
 	elements.cardNumber = randomCard();
 	elements.prepToHide = verbsMitPrep[elements.cardNumber][0][1];
+	elements.explanation.style.color = 'transparent';
 
 	const wordsWithoutSpecial = commonPrepositions.filter(word => word !== elements.prepToHide);
 	elements.randomWords = getRandomWords(wordsWithoutSpecial, 4);

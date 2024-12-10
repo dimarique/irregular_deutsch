@@ -147,11 +147,14 @@ a {
 
 .wrong_answer {
 	background-color: hsla(0, 100%, 50%, 0.75);
-	/*animation: errorAnim 0.1s 1;*/
 }
 
 .correct_answer {
 	background-color: hsla(120, 100%, 50%, 0.75);
+}
+
+.explanation {
+	color: transparent;
 }
 
 /* Start buttons block */
@@ -167,7 +170,6 @@ a {
 
 button {
 	background: none;
-	/*background-color: #4d578e;*/
 	border: none;
 	width: 49%;
 	outline: none;
@@ -181,6 +183,19 @@ button {
 	border-radius: 5px;
 	text-align: center;
 	box-shadow: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
+}
+
+.buttons_wrapper_verbsMit>.next_btn {
+	margin-left: 25%;
+}
+
+.translate_btn {
+	width: auto;
+	aspect-ratio: 1 / 1;
+	margin-left: auto;
+	padding: 0 15px;
+
+	box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
 }
 
 @media (prefers-color-scheme:dark) {
@@ -212,7 +227,6 @@ button {
 	}
 
 	button {
-		/*color: var(--mainWhiteColor);*/
 		color: white;
 		box-shadow: none;
 	}
