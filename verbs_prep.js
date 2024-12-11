@@ -13,7 +13,7 @@ const elements = {
 	translateButton: document.querySelector('.translate_btn'),
 	beispilText: document.querySelector('.beispil'),
 	verbMitPrep: document.querySelector('.verbMitPrep'),
-	explanation: document.querySelector('.explanation'),
+	hiddenExplanation: document.querySelector('.hidden_explanation'),
 	cardNumber: randomCard(),
 	buttons: document.querySelectorAll('.btn')
 }
@@ -38,11 +38,11 @@ function hidePrepInText(text) {
 	return text.replace(elements.prepToHide, hiddenWord);
 }
 
-function showHint() {
-	elements.explanation.style.color = 'hsl(206, 64%, 27%)';
+function showTranslation() {
+	elements.hiddenExplanation.classList.toggle('hidden_explanation');
 }
 
-elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
+elements.hiddenExplanation.innerText = verbsMitPrep[elements.cardNumber][2];
 elements.beispilText.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][1].join(' '));
 elements.verbMitPrep.innerHTML = hidePrepInText(verbsMitPrep[elements.cardNumber][0].join(' '));
 
@@ -72,9 +72,8 @@ elements.nextButton.addEventListener('click', function() {
 });
 
 elements.translateButton.addEventListener('click', function() {
-	showHint()
+	showTranslation()
 });
-
 
 function randomCard() {
 	return (Math.floor(Math.random() * verbsMitPrep.length));
@@ -83,7 +82,7 @@ function randomCard() {
 function loadNewCard() {
 	elements.cardNumber = randomCard();
 	elements.prepToHide = verbsMitPrep[elements.cardNumber][0][1];
-	elements.explanation.style.color = 'transparent';
+	//elements.explanation.style.color = 'transparent';
 
 	const wordsWithoutSpecial = commonPrepositions.filter(word => word !== elements.prepToHide);
 	elements.randomWords = getRandomWords(wordsWithoutSpecial, 4);
@@ -100,5 +99,5 @@ function loadNewCard() {
 		}
 	});
 
-	elements.explanation.innerText = verbsMitPrep[elements.cardNumber][2];
+	elements.hiddenExplanation.innerText = verbsMitPrep[elements.cardNumber][2];
 }

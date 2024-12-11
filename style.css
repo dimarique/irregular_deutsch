@@ -1,11 +1,21 @@
 :root {
-	/*Light theme*/
-	--day-background-color: hsl(206, 64%, 92%);
-	--day-text-color: hsl(206, 64%, 27%);
+	/*Day theme*/
+	--color-day-bg: hsl(206, 64%, 92%);
+	--color-day-text: hsl(206, 64%, 27%);
+	--color-day-error: hsla(0, 100%, 50%, 0.75);
+	--color-day-success: hsla(120, 100%, 50%, 0.75);
+	--color-day-hidden-word: hsl(60, 100%, 50%);
 
-	/*Dark theme*/
-	--night-background-color: hsl(234, 30%, 21%);
-	--night-text-color: hsl(230, 89%, 74%);
+	/*Night theme*/
+	--color-night-bg: hsl(0, 0%, 7%);
+	--color-night-text: hsl(230, 89%, 74%);
+	--color-night-error: hsla(0, 90%, 60%, 0.6);
+	--color-night-success: hsla(120, 90%, 45%, 0.75);
+	--color-night-hidden-word: hsla(60, 90%, 40%, 0.8);
+
+	/*Shadows*/
+	--shadow-long: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
+	--shadow-short: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
 }
 
 * {
@@ -33,7 +43,7 @@ a {
 
 .page_wrapper {
 	width: 95%;
-	box-shadow: 0 16px 64px 0 hsla(0, 0%, 0%, 0.15);
+	/*box-shadow: 0 16px 64px 0 hsla(0, 0%, 0%, 0.15);*/
 	border-radius: 25px;
 	padding: 0 5% 45px 5%;
 	margin: 10% auto;
@@ -47,7 +57,7 @@ a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 12px;
-	border-bottom: 1px solid var(--day-text-color);
+	border-bottom: 1px solid var(--color-day-text);
 }
 
 .nav_pane .nav_button {
@@ -59,7 +69,7 @@ a {
 }
 
 .content_wrapper {
-	color: var(--day-text-color);
+	color: var(--color-day-text);
 	display: flex;
 	margin-top: 20px;
 	flex-direction: column;
@@ -98,7 +108,7 @@ a {
 }
 
 .hidden_word {
-	background-color: hsl(60, 100%, 50%);
+	background-color: var(--color-day-hidden-word);
 	color: transparent;
 	border-radius: 6px;
 }
@@ -142,18 +152,18 @@ a {
 	border-radius: 5px;
 	text-align: center;
 	border: none;
-	box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
+	box-shadow: var(--shadow-short);
 }
 
 .wrong_answer {
-	background-color: hsla(0, 100%, 50%, 0.75);
+	background-color: var(--color-day-error);
 }
 
 .correct_answer {
-	background-color: hsla(120, 100%, 50%, 0.75);
+	background-color: var(--color-day-success);
 }
 
-.explanation {
+.hidden_explanation {
 	color: transparent;
 }
 
@@ -173,7 +183,7 @@ button {
 	border: none;
 	width: 49%;
 	outline: none;
-	color: var(--day-text-color);
+	color: var(--color-day-text);
 	padding: 10px 30px;
 	font-size: 1.25rem;
 	font-family: inherit;
@@ -182,7 +192,7 @@ button {
 	border: 1px solid;
 	border-radius: 5px;
 	text-align: center;
-	box-shadow: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
+	box-shadow: var(--shadow-long);
 }
 
 .buttons_wrapper_verbsMit>.next_btn {
@@ -195,27 +205,27 @@ button {
 	margin-left: auto;
 	padding: 0 15px;
 
-	box-shadow: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
+	box-shadow: var(--shadow-short);
 }
 
 @media (prefers-color-scheme:dark) {
 	body {
-		background-color: black;
+		background-color: var(--color-night-bg);
 	}
 
 	.page_wrapper {
-		background-color: var(--night-background-color);
+		background-color: var(--color-night-bg);
 	}
 
 	.nav_pane {
-		color: var(--night-text-color);
-		border-bottom: 1px solid var(--night-text-color);
+		color: var(--color-night-text);
+		border-bottom: 1px solid var(--color-night-text);
 	}
 
 
 	.content_wrapper {
-		color: var(--night-text-color);
-		background-color: var(--night-background-color);
+		color: var(--color-night-text);
+		background-color: var(--color-night-bg);
 	}
 
 	.hidden_word_irregular {
@@ -223,11 +233,16 @@ button {
 	}
 
 	.prep {
-		border: 1px solid var(--night-text-color);
+		border: 1px solid var(--color-night-text);
+	}
+
+	.hidden_word {
+		background-color: var(--color-night-hidden-word);
+
 	}
 
 	button {
-		color: white;
-		box-shadow: none;
+		color: var(--color-night-text);
+		/*box-shadow: none;*/
 	}
 }
