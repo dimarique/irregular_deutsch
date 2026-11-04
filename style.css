@@ -1,248 +1,250 @@
 :root {
-	/*Day theme*/
-	--color-day-bg: hsl(206, 64%, 92%);
-	--color-day-text: hsl(206, 64%, 27%);
-	--color-day-error: hsla(0, 100%, 50%, 0.75);
-	--color-day-success: hsla(120, 100%, 50%, 0.75);
-	--color-day-hidden-word: hsl(60, 100%, 50%);
+  /*Day theme*/
+  --color-day-bg: hsl(206, 64%, 92%);
+  --color-day-text: hsl(206, 64%, 27%);
+  --color-day-error: hsla(0, 100%, 50%, 0.75);
+  --color-day-success: hsla(120, 100%, 50%, 0.75);
+  --color-day-hidden-word: hsl(60, 100%, 50%);
 
-	/*Night theme*/
-	--color-night-bg: hsl(0, 0%, 7%);
-	--color-night-text: hsl(230, 89%, 74%);
-	--color-night-error: hsla(0, 90%, 60%, 0.6);
-	--color-night-success: hsla(120, 90%, 45%, 0.75);
-	--color-night-hidden-word: hsla(60, 90%, 40%, 0.8);
+  /*Night theme*/
+  /* --color-night-bg: hsl(0, 0%, 7%); */
+  --color-night-bg: #333333;
+  /* --color-night-text: hsl(230, 89%, 74%); */
+  --color-night-text: #E0E0E0;
+  --color-night-error: hsla(0, 90%, 60%, 0.6);
+  --color-night-success: hsla(120, 90%, 45%, 0.75);
+  --color-night-hidden-word: hsla(60, 90%, 40%, 0.8);
 
-	/*Shadows*/
-	--shadow-long: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
-	--shadow-short: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
+  /*Shadows*/
+  --shadow-long: 0px 10px 15px -3px hsla(206, 64%, 27%, 0.5);
+  --shadow-short: 0px 5px 5px -3px hsla(206, 64%, 27%, 0.5);
 }
 
 * {
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
 }
 
 body {
-	height: 80vh;
-	min-height: 550px;
+  height: 80vh;
+  min-height: 550px;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
-	font-weight: normal;
-	font-size: inherit;
-	font-style: normal;
-	background: none;
-	border: none;
-	padding: 0;
-	margin: 0;
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-size: inherit;
+  font-style: normal;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .page_wrapper {
-	width: 95%;
-	/*box-shadow: 0 16px 64px 0 hsla(0, 0%, 0%, 0.15);*/
-	border-radius: 25px;
-	padding: 0 5% 45px 5%;
-	margin: 10% auto;
-	max-width: 500px;
+  width: 95%;
+  /*box-shadow: 0 16px 64px 0 hsla(0, 0%, 0%, 0.15);*/
+  border-radius: 25px;
+  padding: 0 5% 45px 5%;
+  margin: 10% auto;
+  max-width: 500px;
 }
 
 .nav_pane {
-	display: flex;
-	justify-content: space-between;
-	color: var(--day-text-color);
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 12px;
-	border-bottom: 1px solid var(--color-day-text);
+  display: flex;
+  justify-content: space-between;
+  color: var(--day-text-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--color-day-text);
 }
 
 .nav_pane .nav_button {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav_pane .inactive {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .content_wrapper {
-	color: var(--color-day-text);
-	display: flex;
-	margin-top: 20px;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
+  color: var(--color-day-text);
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* Start words block */
 .words_wrapper {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	line-height: 3;
-	width: 100%;
-	padding: 2%;
-	margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3;
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 50px;
 }
 
 .line_wrapper {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
 .word {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .word_hint {
-	font-variant: normal;
-	font-size: 0.875rem;
+  font-variant: normal;
+  font-size: 0.875rem;
 }
 
 .hidden_word {
-	background-color: var(--color-day-hidden-word);
-	color: transparent;
-	border-radius: 6px;
+  background-color: var(--color-day-hidden-word);
+  color: transparent;
+  border-radius: 6px;
 }
 
 .hidden_word_irregular {
-	color: transparent;
+  color: transparent;
 }
 
 .pageSwitcher {
-	cursor: pointer;
-	padding: 1em;
-	margin: -1em;
+  cursor: pointer;
+  padding: 1em;
+  margin: -1em;
 }
 
 .text {
-	margin: 1em auto;
-	font-size: 1.25rem;
+  margin: 1em auto;
+  font-size: 1.25rem;
 }
 
 .card_wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .prepWrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 
 }
 
 .prep {
 
-	font-variant: normal;
-	padding: 1em;
-	margin: .3em;
-	width: auto;
-	border-radius: 5px;
-	text-align: center;
-	border: none;
-	box-shadow: var(--shadow-short);
+  font-variant: normal;
+  padding: 1em;
+  margin: .3em;
+  width: auto;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  box-shadow: var(--shadow-short);
 }
 
 .wrong_answer {
-	background-color: var(--color-day-error);
+  background-color: var(--color-day-error);
 }
 
 .correct_answer {
-	background-color: var(--color-day-success);
+  background-color: var(--color-day-success);
 }
 
 .hidden_explanation {
-	color: transparent;
+  color: transparent;
 }
 
 /* Start buttons block */
 .buttons_wrapper {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .buttons_wrapper_verbsMit {
-	justify-content: center;
+  justify-content: center;
 }
 
 button {
-	background: none;
-	border: none;
-	width: 49%;
-	outline: none;
-	color: var(--color-day-text);
-	padding: 10px 30px;
-	font-size: 1.25rem;
-	font-family: inherit;
-	font-variant: small-caps;
-	cursor: pointer;
-	border: 1px solid;
-	border-radius: 5px;
-	text-align: center;
-	box-shadow: var(--shadow-long);
+  background: none;
+  border: none;
+  width: 49%;
+  outline: none;
+  color: var(--color-day-text);
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  font-family: inherit;
+  font-variant: small-caps;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: var(--shadow-long);
 }
 
 .buttons_wrapper_verbsMit>.next_btn {
-	margin-left: 25%;
+  margin-left: 25%;
 }
 
 .translate_btn {
-	width: auto;
-	aspect-ratio: 1 / 1;
-	margin-left: auto;
-	padding: 0 15px;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  margin-left: auto;
+  padding: 0 15px;
 
-	box-shadow: var(--shadow-short);
+  box-shadow: var(--shadow-short);
 }
 
 @media (prefers-color-scheme:dark) {
-	body {
-		background-color: var(--color-night-bg);
-	}
+  body {
+    background-color: var(--color-night-bg);
+  }
 
-	.page_wrapper {
-		background-color: var(--color-night-bg);
-	}
+  .page_wrapper {
+    background-color: var(--color-night-bg);
+  }
 
-	.nav_pane {
-		color: var(--color-night-text);
-		border-bottom: 1px solid var(--color-night-text);
-	}
+  .nav_pane {
+    color: var(--color-night-text);
+    border-bottom: 1px solid var(--color-night-text);
+  }
 
 
-	.content_wrapper {
-		color: var(--color-night-text);
-		background-color: var(--color-night-bg);
-	}
+  .content_wrapper {
+    color: var(--color-night-text);
+    background-color: var(--color-night-bg);
+  }
 
-	.hidden_word_irregular {
-		color: transparent;
-	}
+  .hidden_word_irregular {
+    color: transparent;
+  }
 
-	.prep {
-		border: 1px solid var(--color-night-text);
-	}
+  .prep {
+    border: 1px solid var(--color-night-text);
+  }
 
-	.hidden_word {
-		background-color: var(--color-night-hidden-word);
+  .hidden_word {
+    background-color: var(--color-night-hidden-word);
 
-	}
+  }
 
-	button {
-		color: var(--color-night-text);
-		/*box-shadow: none;*/
-	}
+  button {
+    color: var(--color-night-text);
+    /*box-shadow: none;*/
+  }
 }
