@@ -1,5 +1,5 @@
 export const words = [
-  // 143 words
+  // 139 words
   ['anbieten', 'bietet an', 'bot an', 'hat angeboten', 'предлагать'],
   ['anfangen', 'fängt an', 'fing an', 'hat angefangen', 'начинать'],
   ['backen', 'backt', 'backte', 'hat gebacken', 'печь'],
@@ -140,7 +140,7 @@ export const words = [
 ];
 
 export const verbsMitPrep = [
-  // 46 verbs
+  // 77 verbs
   [
     ['sich entscheiden', 'für'],
     ['Die Familie entscheidet sich', 'für', 'die Wohnung mit Balkon.'],
